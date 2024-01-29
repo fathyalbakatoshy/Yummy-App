@@ -1,6 +1,7 @@
 export class Contact {
   constructor() {
     this.showContacts();
+    $("#searchContainer").addClass("d-none")
     this.isValid = [false, false, false, false, false, false];
   }
 
