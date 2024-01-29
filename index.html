@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="./img/img1.png" type="image/x-icon" />
+  <title>Yummy</title>
+</head>
+<body class="bg-black">
+  <aside class="d-flex text-white">
+    <div class="data bg-black d-flex flex-column justify-content-between">
+      <ul class="links">
+        <li><a href="#search" id="showSearch">Search</a></li>
+        <li><a href="#categories" id="showCategory">Categories</a></li>
+        <li><a href="#areaSection" id="showArea">Area</a></li>
+        <li><a href="#ingredients" id="showIngred">Ingredients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="data-footer text-white">
+        <ul class="icon-list d-flex">
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-sharp fa-solid fa-globe"></i></a>
+          </li>
+        </ul>
+        <p class="small">
+          Copy right A© <span id="date"> 2024 </span> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+    <div
+      class="sideIcon d-flex flex-column justify-content-between align-items-center py-4 px-2"
+    >
+      <img class="icon" src="./img/img1.png" alt="" />
+      <i class="btnIcon fas fa-align-justify fa-2x" id="menuIcon"></i>
+      <div class="d-flex flex-column text-black">
+        <i class="fa-solid fa-globe py-2"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </aside>
+  <section class=" min-vh-100 position-relative">
+    <div class="container w-75 d-none" id="searchContainer">
+      <div class="row py-4 ">
+        <div class="col-md-6 ">
+            <input id="searchByName" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+        </div>
+        <div class="col-md-6">
+            <input id="searchByLetter" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+        </div>
+    </div>
+    </div>
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <div class="min-vh-100 position-relative">
+      <div class="main-loading top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+          <span class="loader"></span>
+      </div>
+      
+  
+      <div class="container">
+          <div class="row py-5 g-4 " id="display">
+              
+          </div>
+      </div>
+  </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
