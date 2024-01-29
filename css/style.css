@@ -34,7 +34,6 @@ aside .data {
 .links li {
   padding-top: 8px;
   padding-bottom: 8px;
-  transition: 0.5s;
   position: relative;
   top: 300px;
 }
