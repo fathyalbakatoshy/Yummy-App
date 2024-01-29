@@ -87,9 +87,9 @@ export class UI {
     for (let i = 0; i < list.length; i++) {
         data += `
         <div class="col-md-3 text-white">
-                <div class="meal position-relative overflow-hidden rounded-2 cursor-pointer" data-name="${list[i].strCategory}">
+                <div class="meal food position-relative overflow-hidden rounded-2 cursor-pointer" data-name="${list[i].strCategory}">
                     <img class="w-100" src="${list[i].strCategoryThumb}" alt="" >
-                    <div class="meal-layer position-absolute text-center text-black p-2">
+                    <div class="layout position-absolute text-center text-black p-2">
                         <h3>${list[i].strCategory}</h3>
                         <p>${list[i].strCategoryDescription.split(" ").slice(0,20).join(" ")}</p>
                     </div>

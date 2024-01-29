@@ -137,14 +137,14 @@ aside .data {
 }
 
 
-#category .food {
+.food {
   overflow: hidden;
   border-radius: 15px;
   position: relative;
 }
 
 
-#category .food .layout {
+.food .layout {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -155,6 +155,6 @@ aside .data {
 
 }
 
-#category .food:hover  .layout{
+.food:hover  .layout{
   top: 0;
 }
