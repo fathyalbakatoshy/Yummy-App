@@ -1,0 +1,160 @@
+/* START GLOBALE ROLE */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* START ASIDE STYLE */
+
+aside {
+  position: fixed;
+  left: -240px;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  background-color: white;
+  z-index: 99;
+}
+
+aside .data {
+  width: 240px;
+  padding: 15px 0 15px 15px;
+}
+
+.links {
+  overflow: hidden;
+}
+
+.links li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  top: 300px;
+}
+
+.links li:hover {
+  color: red;
+}
+
+#menuIcon {
+  color: black;
+  cursor: pointer;
+}
+
+.icon-list li {
+  margin-right: 10px;
+}
+
+
+.sideIcon .icon {
+  width: 50px;
+}
+
+#home .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img::after {
+  content: attr(data-name);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  left: 0;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.img:hover::after {
+  top: 0;
+}
+
+/* Start Details Section */
+
+.loading {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+
+.main-loading {
+  position: absolute;
+    z-index: 9;
+    background-color: black;
+    display: flex;
+}
+
+
+#category .food {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+#category .food .layout {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f6f6ca;
+  transition: 0.5s;
+
+}
+
+#category .food:hover  .layout{
+  top: 0;
+}
