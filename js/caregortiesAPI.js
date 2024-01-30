@@ -1,5 +1,5 @@
 import { UI } from "./UI.js"
-import { Aside } from "./aside.js"
+
 
 export class Categories {
   constructor() {
@@ -7,7 +7,6 @@ export class Categories {
     $(".main-loading").fadeIn("0")
     this.getCategories()
     this.ui = new UI()
-    this.sidebar = new Aside()
   }
 
   async getCategories() {

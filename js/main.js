@@ -1,3 +1,3 @@
-import { CategotryApi } from "./landing.js";
+import { Aside } from "./aside.js";
 
-new CategotryApi()
+new Aside()

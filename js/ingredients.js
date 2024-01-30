@@ -8,6 +8,7 @@ export class Ingredients{
 
 
   async getIngredientsAPI() {
+    $("#searchContainer").addClass("d-none")
     $('.main-loading').fadeIn();
     let data = await fetch("https://www.themealdb.com/api/json/v1/1/list.php?i=list")
     let res = await data.json()

@@ -3,7 +3,6 @@ import { Details } from "./getDetails.js";
 
 export class UI {
   constructor() {
-    this.sideBar = new Aside();
   }
 
   getID() {
@@ -18,7 +17,7 @@ export class UI {
   }
 
   logUi(list) {
-    this.sideBar.closeSideNav()
+    // this.sideBar.closeSideNav()
     let data = ``;
     for (let i = 0; i < list.length; i++) {
       data += `
@@ -35,7 +34,7 @@ export class UI {
   }
 
   displayMealDetails(meal) {
-    this.sideBar.closeSideNav()
+    // this.sideBar.closeSideNav()
     let ingredients = ``;
 
     for (let i = 1; i <= 20; i++) {
@@ -119,6 +118,7 @@ export class UI {
   }
 
   displayIntgrediens(list) {
+    $("")
     let data = "";
     for (let i = 0; i < list.length; i++) {
         data += `

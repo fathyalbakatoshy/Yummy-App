@@ -100,7 +100,7 @@ export class Contact {
   }
 
   validatePhone(phoneInput) {
-    let regex = /^\d{10}$/;
+    let regex = /^\d{11}$/;
     if (regex.test(phoneInput.value)) {
       document.getElementById("phoneAlert").classList.replace("d-block", "d-none");
       this.isValid[2] = true;

@@ -1,4 +1,5 @@
 import { UI } from "./UI.js"
+import { Aside } from "./aside.js"
 
 export class Details{
 

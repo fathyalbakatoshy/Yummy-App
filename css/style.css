@@ -37,6 +37,9 @@ aside .data {
   position: relative;
   top: 300px;
 }
+.links li a {
+  display: block;
+}
 
 .links li:hover {
   color: red;

@@ -3,9 +3,11 @@ import { Categories } from "./caregortiesAPI.js";
 import { AreaAPI } from "./AreaAPI.js";
 import { Ingredients } from "./ingredients.js";
 import { Contact } from "./contact.js";
+import { CategotryApi } from "./landing.js";
 
 export class Aside {
   constructor() {
+    new CategotryApi()
     this.openAndClose();
     this.displayLinks();
   }
@@ -19,8 +21,8 @@ export class Aside {
   }
 
   closeSideNav() {
-    let boxWidth = $("aside .data").outerWidth();
-    $("aside").animate({ left: -boxWidth }, 500);
+    let boxWidth = $("aside .data").innerWidth();
+    $("aside").animate({ left: `-${boxWidth}px` }, 500);
     $(".btnIcon").addClass("fa-align-justify").removeClass("fa-x");
     $(".links li").animate({ top: 300 }, 500);
   }
