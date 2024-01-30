@@ -25,8 +25,11 @@ export class Search {
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
     );
     let res = await data.json();
-
-    this.ui.logUi(res.meals);
+      if(res.meals == null) {
+        document.querySelector("#display").innerHTML = "<h4 class='alert alert-danger w-50 m-auto text-center' role='alert'>Can't Find Anything</h4>"
+      } else {
+        this.ui.logUi(res.meals);
+      }
     $(".main-loading").fadeOut(300);
   }
 
@@ -37,8 +40,11 @@ export class Search {
       `https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`
     );
     let res = await data.json();
-    console.log(res.meals);
-    this.ui.logUi(res.meals);
+    if(res.meals == null) {
+      document.querySelector("#display").innerHTML = "<h4 class='alert alert-danger w-50 m-auto text-center' role='alert'>Can't Find Anything</h4>"
+    } else {
+      this.ui.logUi(res.meals);
+    }
 
     // response.meals ? displayMeals(response.meals) : displayMeals([])
     $(".main-loading").fadeOut(300);
